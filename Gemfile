@@ -48,3 +48,4 @@ end
 
 gem 'minitest-rails'
 gem 'simple_form'
+gem "bootstrap-sass"

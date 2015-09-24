@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
 
   def authenticate_user!
     if @current_user.blank?
-      redirect_to sign_in_path
+      redirect_to sign_in_path, notice: "Please Sign In"
     end
   end
 end

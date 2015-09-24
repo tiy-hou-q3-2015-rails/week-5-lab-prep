@@ -9,7 +9,7 @@ class UsersController < ApplicationController
       # sign in
       session[:user_id] = @user.id
       # redirect
-      redirect_to root_path
+      redirect_to root_path, notice: "Thanks for signing up! #secrets"
     else
       render :new
     end
